@@ -4141,7 +4141,7 @@ input[type=button].btn-block {
 @media (min-width: 992px) {
   .navbar-expand-lg {
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -10092,12 +10092,12 @@ body {
 }
 
 .sb-topnav {
-  padding-left: 0;
+  /*padding-left: 0;*/
   height: 56px;
   z-index: 1039;
 }
 .sb-topnav .navbar-brand {
-  width: 225px;
+  /*width: 225px;*/
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0;
