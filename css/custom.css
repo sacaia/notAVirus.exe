@@ -10,3 +10,36 @@
 .icon-sm {
     font-size: 3ch;
 }
+
+.bg-lightpink {
+    background-image: linear-gradient(to bottom right, rgba(210, 63, 171, 1), rgba(43, 221, 214, 1));
+}
+
+.margin-sides {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.back-home {
+    color: rgba(148, 5, 134, 1);
+}
+
+.back-home:hover {
+    color: rgba(189, 68, 176, 1);
+}
+
+.bg-purple {
+    background-color: #642c99 !important;
+}
+
+.bg-purple-light {
+    background-color: #bd75ff !important;
+}
+
+.bg-purple-dark {
+    background-color: rgb(24, 2, 49) !important;
+}
+
+.border-purple {
+    border-color: #642c99 !important;
+}
