@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b050c41-d14b-452b-b41b-127dfff1d84d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../js/WHO.populationOver60.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js/WHO.populationOver60.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pycharm$pycharm.coverage" NAME="pycharm Coverage Results" MODIFIED="1590952970809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pycharm$pycharm.coverage" NAME="pycharm Coverage Results" MODIFIED="1590962416526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2134381876">
@@ -25,24 +23,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="185" />
+          <entry key="py" value="630" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="185" />
+          <entry key="Python" value="630" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="py" value="1" />
+          <entry key="py" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="Python" value="1" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -52,11 +50,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="266">
+              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
-                <marker date="1590953029771" expanded="true" signature="504:507" ph="..." />
+                <marker date="1590962415038" expanded="true" signature="1074:1426" ph="..." />
               </folding>
             </state>
           </provider>
@@ -68,6 +66,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
+        <option value="Setup Script" />
       </list>
     </option>
   </component>
@@ -160,8 +159,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32879046" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28620103" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42589438" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28620103" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42589438" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -184,9 +183,30 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Python.FlaskServer">
+        <watch expression="ret[i][&quot;Country&quot;]" />
+        <watch expression="j[&quot;features&quot;][i]" />
+        <watch expression="j[&quot;features&quot;][i][&quot;attributes&quot;][&quot;geoAreaName&quot;]" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/template.json">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Kyuni/old_gerenciadorDeDados.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1377" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Kyuni/gerenciadorDeDados.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -197,11 +217,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="266">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
-            <marker date="1590953029771" expanded="true" signature="504:507" ph="..." />
+            <marker date="1590962415038" expanded="true" signature="1074:1426" ph="..." />
           </folding>
         </state>
       </provider>
