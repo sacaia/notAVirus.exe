@@ -58,16 +58,16 @@
                             API Documentation
                         </a>
                         <div class="sb-sidenav-menu-heading">Data Center</div>
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts"
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseLayouts"
                             aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-heartbeat icon-sm"></i></div>
                             World Health Organization
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                        <div class="collapse show" id="collapseLayouts" aria-labelledby="headingOne"
                             data-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav"><a class="nav-link"
-                                    href="WHO.populationOver60.html">Population proportion over 60</a><a class="nav-link"
+                            <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="layout-static.html"
+                                    style="color: #ffff;">Population proportion over 60</a><a class="nav-link"
                                     href="layout-sidenav-light.html">Mortality rate for 5-14 year-olds</a></nav>
                         </div>
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
@@ -120,58 +120,13 @@
         </div>
         <div id="layoutSidenav_content">
             <main>
-                <div class="jumbotron jumbotron-fluid bg-lightpink">
-                    <div class="container">
-                        <h1 class="display-4">Welcome to the Not a Virus Project!</h1>
-                        <p class="lead">We work with open data, processing and making it easier for everyone to enjoy
-                            it, be it only by looking up at our charts or consuming the data using our API.</p>
-                    </div>
-                </div>
-                <div class="card-deck margin-sides">
+                <div class="container-fluid">
+                    <h1 class="mt-4 mb-4">Population over 60</h1>
 
-                    <div class="card border-purple">
-                        <img src="assets/img/pencils2.jpg" class="card-img-top">
-                        <div class="card-header">
-                            <h4 class="card-title">Charts!</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">If you are looking for easily visualizable data, you should definitely
-                                visit our amazing charts.</p>
-
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn bg-purple text-light" style="display: block;">Charts</a>
-                        </div>
-                    </div>
-
-                    <div class="card border-purple">
-                        <img src="assets/img/chart.jpg" class="card-img-top">
-                        <div class="card-header">
-                            <h4 class="card-title">Real time Data!</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Most of our data sources are updated constantly, and so do we! Check
-                                for specific tables from various sources in just one place.</p>
-
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn bg-purple text-light" style="display: block;">Show me</a>
-                        </div>
-                    </div>
-
-                    <div class="card border-purple">
-                        <img src="assets/img/doc.png" class="card-img-top">
-                        <div class="card-header">
-                            <h4 class="card-title">Check our API!</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">We provide an open source API with our data so others can keep sharing
-                                open data.</p>
-
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn bg-purple text-light" style="display: block;">Documentation</a>
-                        </div>
+                    <div class="card">
+                        <div class="card-header"><i class="fas fa-globe-americas mr-2"></i>World map</div>
+                        <div class="card-body"><canvas id="canvas" width="100%" height="30"></canvas></div>
+                        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                     </div>
                 </div>
             </main>
@@ -194,11 +149,10 @@
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://unpkg.com/chartjs-chart-geo@2.1.0/build/Chart.Geo.min.js"></script>
+    <script src="js/WHO.populationOver60.js"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-    <script src="assets/demo/datatables-demo.js"></script>
 </body>
 
 </html>
