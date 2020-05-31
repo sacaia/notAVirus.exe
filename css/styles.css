@@ -10093,7 +10093,7 @@ body {
 
 .sb-topnav {
   /*padding-left: 0;*/
-  height: 10vh;
+  height: 9vh;
   z-index: 1039;
 }
 .sb-topnav .navbar-brand {
@@ -10103,7 +10103,7 @@ body {
   margin: 0;
 }
 .sb-topnav.navbar-dark #sidebarToggle {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 .sb-topnav.navbar-light #sidebarToggle {
   color: #212529;

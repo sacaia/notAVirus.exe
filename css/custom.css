@@ -1,0 +1,12 @@
+.icon {
+    height: 9vh;
+    width: auto;
+}
+
+.icon-md {
+    font-size: 3.5vh;
+}
+
+.icon-sm {
+    font-size: 3ch;
+}
