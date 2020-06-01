@@ -35,8 +35,7 @@ var chartData = {
   options: {
     scales: {},
     title: {
-      display: true,
-      text: 'Custom Chart Title'
+      display: true
     },
     tooltips: {
       mode: 'point',
