@@ -9,8 +9,8 @@
     <meta name="author" content="notAVirus.exe" />
     <title>Not a Virus</title>
     <link href="assets/img/NOTAVIRUScolordegrade.png" rel="shortcut icon" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/custom.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
         crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
@@ -19,9 +19,9 @@
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-dark bg-purple" style="flex-flow: row-reverse;">
-        <a href="index.html"><img src="assets/img/NOTAVIRUSbranco.png" class="icon"></a>
+        <a href="index.html"><img src="../assets/img/NOTAVIRUSbranco.png" class="icon"></a>
 
-        <a href="index.html"><img src="assets/img/letras branco1.png" style="height: 6vh;"></a>
+        <a href="index.html"><img src="../assets/img/letras branco1.png" style="height: 6vh;"></a>
 
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
                 class="fas fa-bars icon-md"></i></button>
@@ -49,11 +49,11 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav" style="font-size: 1.5ch;">
                         <div class="sb-sidenav-menu-heading">Introduction</div>
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="../index.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-home icon-sm"></i></div>
                             Home
                         </a>
-                        <a class="nav-link" href="swagger.yaml">
+                        <a class="nav-link" href="../swagger.yaml">
                             <div class="sb-nav-link-icon"><i class="fas fa-book icon-sm"></i></div>
                             API Documentation
                         </a>
@@ -67,8 +67,8 @@
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
                             data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="who/populationOver60.html">Population proportion over 60</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Mortality rate for 5-14 year-olds</a>
+                                <a class="nav-link" href="../who/populationOver60.html">Population proportion over 60</a>
+                                <a class="nav-link" href="#">Mortality rate for 5-14 year-olds</a>
                             </nav>
                         </div>
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
@@ -80,16 +80,16 @@
                         <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
                             data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link" href="unstats/352.html">Alcohol consumption per capita within a calendar year</a>
-                                <a class="nav-link" href="unstats/372.html">Adolescent birth rate</a>
-                                <a class="nav-link" href="unstats/391.html">Crude death rate attributed to ambient air pollution</a>
-                                <a class="nav-link" href="unstats/392.html">Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene</a>
-                                <a class="nav-link" href="unstats/611.html">Proportion of population using safely managed drinking water services, by urban/rural</a>
-                                <a class="nav-link" href="unstats/621.html">Proportion of population with basic handwashing facilities on premises, by urban/rural</a>
-                                <a class="nav-link" href="unstats/641.html">Water Use Efficiency</a>
-                                <a class="nav-link" href="unstats/642.html">Level of water stress: freshwater withdrawal as a proportion of available freshwater resources</a>
-                                <a class="nav-link" href="unstats/651.html">Degree of integrated water resources management implementation</a>
-                            </nav>
+                                    <a class="nav-link" href="../unstats/352.html">Alcohol consumption per capita within a calendar year</a>
+                                    <a class="nav-link" href="../unstats/372.html">Adolescent birth rate</a>
+                                    <a class="nav-link" href="../unstats/391.html">Crude death rate attributed to ambient air pollution</a>
+                                    <a class="nav-link" href="../unstats/392.html">Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene</a>
+                                    <a class="nav-link" href="../unstats/611.html">Proportion of population using safely managed drinking water services, by urban/rural</a>
+                                    <a class="nav-link" href="../unstats/621.html">Proportion of population with basic handwashing facilities on premises, by urban/rural</a>
+                                    <a class="nav-link" href="../unstats/641.html">Water Use Efficiency</a>
+                                    <a class="nav-link" href="../unstats/642.html">Level of water stress: freshwater withdrawal as a proportion of available freshwater resources</a>
+                                    <a class="nav-link" href="../unstats/651.html">Degree of integrated water resources management implementation</a>
+                                </nav>
                         </div>
                         <!--
                         <div class="sb-sidenav-menu-heading">Graphs</div>
@@ -110,61 +110,17 @@
             </nav>
         </div>
         <div id="layoutSidenav_content">
-            <main>
-                <div class="jumbotron jumbotron-fluid bg-lightpink">
-                    <div class="container">
-                        <h1 class="display-4">Welcome to the Not a Virus Project!</h1>
-                        <p class="lead">We work with open data, processing and making it easier for everyone to enjoy
-                            it, be it only by looking up at our charts or consuming the data using our API.</p>
-                    </div>
-                </div>
-                <div class="card-deck margin-sides">
-
-                    <div class="card border-purple">
-                        <img src="assets/img/pencils2.jpg" class="card-img-top">
-                        <div class="card-header">
-                            <h4 class="card-title">Charts!</h4>
+                <main>
+                        <div class="container-fluid">
+                            <h1 class="mt-4 mb-4">Population over 60</h1>
+                
+                            <div class="card">
+                                <div class="card-header"><i class="fas fa-globe-americas mr-2"></i>World map</div>
+                                <div class="card-body"><canvas id="canvas" width="100%" height="30"></canvas></div>
+                                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text">If you are looking for easily visualizable data, you should definitely
-                                visit our amazing charts.</p>
-
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn bg-purple text-light" style="display: block;">Charts</a>
-                        </div>
-                    </div>
-
-                    <div class="card border-purple">
-                        <img src="assets/img/chart.jpg" class="card-img-top">
-                        <div class="card-header">
-                            <h4 class="card-title">Real time Data!</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Most of our data sources are updated constantly, and so do we! Check
-                                for specific tables from various sources in just one place.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn bg-purple text-light" style="display: block;">Show me</a>
-                        </div>
-                    </div>
-
-                    <div class="card border-purple">
-                        <img src="assets/img/doc.png" class="card-img-top">
-                        <div class="card-header">
-                            <h4 class="card-title">Check our API!</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">We provide an open source API with our data so others can keep sharing
-                                open data.</p>
-
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn bg-purple text-light" style="display: block;">Documentation</a>
-                        </div>
-                    </div>
-                </div>
-            </main>
+                    </main>
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
@@ -182,11 +138,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/charts.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/charts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="../js/unstats.651.js"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
     <script src="assets/demo/datatables-demo.js"></script>

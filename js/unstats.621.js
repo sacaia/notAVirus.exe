@@ -15,7 +15,7 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
     }
 
     function fetchAirPolution() {
-        return fetch(apiUrl + "/unstats/352")
+        return fetch(apiUrl + "/unstats/621")
             .then(function (response) {
                 if (response.status === 200)
                     console.log(response)
