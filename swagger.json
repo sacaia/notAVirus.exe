@@ -1,0 +1,283 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is our documentation, here you'll learn more about how to use our product for your own projects. Remember to keep it open, we only exist because of open data ;)",
+    "version": "1.0.0",
+    "title": "Not a API",
+    "contact": {
+      "email": "n0t4v1ru5@gmail.com"
+    }
+  },
+  "host": "notav1rus.herokuapp.com",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "unstats",
+      "description": "UN Stats Data",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "https://unstats.un.org"
+      }
+    }
+  ],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/unstats": {
+      "get": {
+        "tags": [
+          "unstats"
+        ],
+        "summary": "List of avaiable indicators",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Indicator"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/unstats/352": {
+      "get": {
+        "tags": [
+          "unstats"
+        ],
+        "summary": "Alcohol consumption per capita (aged 15 years and older) within a calendar year (litres of pure alcohol)",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Blob"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/unstats/372": {
+      "get": {
+        "tags": [
+          "unstats"
+        ],
+        "summary": "Adolescent birth rate (per 1,000 women aged 15-19 years)",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Blob"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/unstats/391": {
+      "get": {
+        "tags": [
+          "unstats"
+        ],
+        "summary": "Crude death rate attributed to ambient air pollution (deaths per 100,000 population)",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Blob"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/unstats/392": {
+      "get": {
+        "tags": [
+          "unstats"
+        ],
+        "summary": "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (deaths per 100,000 population)",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Blob"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/unstats/611": {
+      "get": {
+        "tags": [
+          "unstats"
+        ],
+        "summary": "Proportion of population using safely managed drinking water services, by urban/rural (percent)",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Blob"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/unstats/621": {
+      "get": {
+        "tags": [
+          "unstats"
+        ],
+        "summary": "Proportion of population with basic handwashing facilities on premises, by urban/rural (percent)",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Blob"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/unstats/641": {
+      "get": {
+        "tags": [
+          "unstats"
+        ],
+        "summary": "Water Use Efficiency (United States dollars per cubic meter)",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Blob"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/unstats/642": {
+      "get": {
+        "tags": [
+          "unstats"
+        ],
+        "summary": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources (percent)",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Blob"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/unstats/651": {
+      "get": {
+        "tags": [
+          "unstats"
+        ],
+        "summary": "Degree of integrated water resources management implementation (percent)",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Blob"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Indicator": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string"
+        }
+      }
+    },
+    "Blob": {
+      "type": "object",
+      "properties": {
+        "Country": {
+          "type": "string"
+        },
+        "Year": {
+          "type": "integer"
+        },
+        "Value": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Back to our page",
+    "url": "http://notavirus.biz"
+  }
+}
